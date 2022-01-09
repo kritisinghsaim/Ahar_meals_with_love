@@ -1,0 +1,129 @@
+/*
+Theme Name: kleo child
+Template: kleo
+Description: Multipurpose Premium WordPress Theme
+Theme URI: http://seventhqueen.com/themes/kleo
+Author: SeventhQueen
+Author URI: http://themeforest.net/user/SeventhQueen
+Version: 3.0.9
+Tags:  one-column, two-columns, right-sidebar, fluid-layout, custom-menu, featured-images, post-formats, sticky-post, translation-ready
+Text Domain: kleo_framework
+License: Themeforest Split Licence
+License URI: - 
+
+@import url("../kleo/style.css");
+
+*/
+
+.post-title .entry-title{
+font-weight:bold;
+}
+.post-header{
+margin-bottom: 40%;
+}
+
+.navbar-nav>li>a {
+font-weight: bolder;
+margin: 0px 11px;
+padding: 4px;
+}
+.nav-collapse{
+float: left;
+}
+.product .images{
+    width: 24%;
+    float: left; 
+    margin-right: 10%; 
+    border-right: 1px solid #ddd; 
+}
+
+.widget-title{ 
+    font-family: sans-serif;
+    font-weight: 700;
+    }
+  
+.tn{
+text-align:center !important;
+}
+
+@media only screen and (min-width:300px) and (max-width: 670px){
+#billing_postcode_field {
+	width:100% !important;
+	}
+	}
+#t01 { 
+	border: 1px solid black;
+   	border-collapse: separate;
+   	padding: 10px;
+    	text-align: center;
+    	color: black;
+    	width: 90%;
+    	}
+    	
+table#t01 tr:nth-child(even) {
+    background-color: #fff;
+}
+
+table#t01 tr:nth-child(odd) {
+   background-color:rgba(242, 95, 52, 0.72);
+}
+
+table#t01 th	{
+    background-color: #F25F34;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding:3%;
+  /*  padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 0px;
+    padding-right: 35px;*/
+} 
+table#t01 td {
+	padding:3%;
+ /*   padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 5px;
+    padding-right: 5px;*/
+}
+#t02 { 
+	border: 1px solid black;
+   	border-collapse: separate;
+   	padding: 10px;
+    	text-align: center;
+    	color: black;
+    	}
+    	
+table#t02 tr:nth-child(even) {
+    background-color: #fff;
+}
+
+table#t02 tr:nth-child(odd) {
+   background-color:rgba(242, 95, 52, 0.72);
+}
+
+table#t02 th	{
+    background-color: #F25F34;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding:3%;
+  /*  padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 0px;
+    padding-right: 35px;*/
+} 
+table#t02 td {
+	padding:3%;
+	width:1%;
+ /*   padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 5px;
+    padding-right: 5px;*/
+}
+tbody {
+	font-size: 15px !important;
+}
+.logo img{
+	max-height: 150% !important;
+}

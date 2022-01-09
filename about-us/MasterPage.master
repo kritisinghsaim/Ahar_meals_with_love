@@ -1,0 +1,508 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="about_us_MasterPage" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		
+	
+	<title>Ahar &#8211; Meals With Love </title>
+		
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+  .number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+</style>
+		<style type="text/css">
+				</style>
+	<link rel='stylesheet' id='ultimate-tables-style-css'  href='../wp-content/plugins/ultimate-tables/css/ultimate-tables729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='ultimate-datatables-style-css'  href='../wp-content/plugins/ultimate-tables/css/jquery.dataTables729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='social-icons-widget-widget-css'  href='../wp-content/plugins/social-media-icons-widget/css/social_icons_widget729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='../wp-content/plugins/contact-form-7/includes/css/styles5859.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cf7cf-style-css'  href='../wp-content/plugins/cf7-conditional-fields/stylec412.css?ver=1.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='cfjqueryuistyle-css'  href='../wp-content/plugins/gf/css/jquery-ui729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='jqueryfootablecss-css'  href='../wp-content/plugins/gf/css/footable.core729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrapnavigation-css'  href='../wp-content/plugins/gf/css/bootstrap729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='progressstyle2css-css'  href='../wp-content/plugins/gf/css/mystyle729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='media-folder-css'  href='../wp-content/plugins/media-folder/public/css/media-folder-public8a54.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='../wp-content/plugins/revslider/public/assets/css/settings6619.css?ver=5.2.5' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='default-icon-styles-css'  href='../wp-content/plugins/svg-vector-icon-plugin/admin/css/wordpress-svg-icon-plugin-style.min729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='wpi_fonts-css'  href='https://fonts.googleapis.com/css?family=Neucha%3A300%2C400%2C600%2C700%7CRock+Salt%7COpen+Sans%3A300%2C400%2C600%2C700%7COpen+Sans+Condensed%3A300%2C700%7CPacifico%7COregano%7CChewy%7CCourgette%7CExo%7CGruppo%7CKite+One%7CKnewave%7CAllura%7CSatisfy%7CSource+Sans+Pro%3A200%2C400%2C600%2C700%7CCrafty+Girls%7CGreat+Vibes%7CSacramento%7COswald%7CUltra%7CAnton%7CRaleway%7CDroid+Sans%7CRoboto%3A100%2C300%2C400%2C700%7CExo+2%3A100%2C300%2C400%2C700%7CCapriola%7CCrimson+Text%7CLato%3A100%2C300%2C400%2C700%7CPlayfair+Display%3A300%2C400%2C700%7CSignika&amp;ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css'  href='../wp-content/themes/kleo/style729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='../wp-content/themes/kleo/assets/css/bootstrap.min8603.css?ver=4.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='kleo-app-css'  href='../wp-content/themes/kleo/assets/css/app.min8603.css?ver=4.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='../wp-content/themes/kleo/assets/js/plugins/magnific-popup/magnific8603.css?ver=4.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='kleo-fonts-css'  href='../wp-content/themes/kleo/assets/css/fontello8603.css?ver=4.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css'  href='../wp-includes/js/mediaelement/mediaelementplayer.min51cd.css?ver=2.22.0' type='text/css' media='all' />
+<link rel='stylesheet' id='kleo-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Roboto+Condensed%3A300&amp;ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='kleo-colors-css'  href='../wp-content/uploads/custom_styles/dynamic8603.css?ver=4.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='../wp-content/plugins/js_composer/assets/css/js_composer.mina752.css?ver=4.11.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpi_designer_button-css'  href='../wp-content/plugins/wpi-designer-button-shortcode/style7738.css?t=842&amp;ver=2.5.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wpi_designer_button_preset_styles-css'  href='../wp-content/plugins/wpi-designer-button-shortcode/preset_styles7738.css?t=842&amp;ver=2.5.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wpi_designer_button_genericons-css'  href='../wp-content/plugins/wpi-designer-button-shortcode/genericons/genericons/genericons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpi_designer_button_font-awesome-css'  href='../wp-content/plugins/wpi-designer-button-shortcode/font-awesome/css/font-awesome.css' type='text/css' media='all' />
+<link rel='stylesheet' id='kleo-woocommerce-css'  href='../wp-content/themes/kleo/woocommerce/assets/css/woocommerce729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='../wp-content/plugins/wpi-designer-button-shortcode/custom_script729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+<link rel='stylesheet' id='kleo-plugins-css'  href='../wp-content/themes/kleo/assets/css/plugins.min8603.css?ver=4.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='kleo-style-css'  href='../wp-content/themes/kleo-child/style8603.css?ver=4.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='../wp-content/plugins/wp-paginate/css/wp-paginate4c56.css?ver=2.0.2' type='text/css' media='screen' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var WPiURLS = { "WPIDB_URL": "\/wp-content\/plugins\/wpi-designer-button-shortcode\/" };
+    var WPIDB_FONTS = ["Arial", "sans-serif", "Neucha", "Rock Salt", "Open Sans", "Open Sans Condensed", "Pacifico", "Oregano", "Chewy", "Courgette", "Exo", "Gruppo", "Kite One", "Knewave", "Allura", "Satisfy", "Source Sans Pro", "Crafty Girls", "Great Vibes", "Sacramento", "Oswald", "Ultra", "Anton", "Raleway", "Droid Sans", "Roboto", "Exo 2", "Capriola", "Crimson Text", "Lato", "Playfair Display", "Signika"];
+    var WPIDB_FONTS_SIZES = ["8px", "9px", "10px", "12px", "14px", "16px", "18px", "20px", "23px", "26px", "28px", "30px", "32px", "36px", "40px", "44px", "48px", "52px", "66px", "72px", "80px", "100px", "120px", "140px", "160px", "180px", "200px", "220px", "240px", "260px", "280px", "300px", "320px", "340px"];
+    var WPIDB_FONTS_WEIGHTS = ["100", "300", "400", "600", "700"];
+    var WPIDB_LETTER_SPACING = ["0px", "-5px", "-4px", "-3px", "-2px", "-1px", "1px", "2px", "3px", "4px", "5px", "6px", "7px", "8px", "9px", "10px", "20px", "30px", "40px", "50px", "60px", "70px", "80px", "90px", "100px"];
+    var WPIDB_MARGIN = ["0px", "10px", "20px", "30px", "40px", "50px", "60px", "70px", "80px", "90px", "100px", "120px", "130px", "140px", "150px", "160px", "170px", "180px", "190px", "200px"];
+    var WPIDB_BORDER_WIDTH = ["0px", "1px", "2px", "3px", "4px", "5px", "6px", "7px", "8px", "9px", "10px"];
+    var WPIDB = { "fonts": ["Arial", "sans-serif", "Neucha", "Rock Salt", "Open Sans", "Open Sans Condensed", "Pacifico", "Oregano", "Chewy", "Courgette", "Exo", "Gruppo", "Kite One", "Knewave", "Allura", "Satisfy", "Source Sans Pro", "Crafty Girls", "Great Vibes", "Sacramento", "Oswald", "Ultra", "Anton", "Raleway", "Droid Sans", "Roboto", "Exo 2", "Capriola", "Crimson Text", "Lato", "Playfair Display", "Signika"], "font_sizes": ["8px", "9px", "10px", "12px", "14px", "16px", "18px", "20px", "23px", "26px", "28px", "30px", "32px", "36px", "40px", "44px", "48px", "52px", "66px", "72px", "80px", "100px", "120px", "140px", "160px", "180px", "200px", "220px", "240px", "260px", "280px", "300px", "320px", "340px"], "font_weights": [100, 300, 400, 600, 700], "letter_spacing": ["0px", "-5px", "-4px", "-3px", "-2px", "-1px", "1px", "2px", "3px", "4px", "5px", "6px", "7px", "8px", "9px", "10px", "20px", "30px", "40px", "50px", "60px", "70px", "80px", "90px", "100px"], "margin": ["0px", "10px", "20px", "30px", "40px", "50px", "60px", "70px", "80px", "90px", "100px", "120px", "130px", "140px", "150px", "160px", "170px", "180px", "190px", "200px"], "border_width": ["0px", "1px", "2px", "3px", "4px", "5px", "6px", "7px", "8px", "9px", "10px"] };
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/wpi-designer-button-shortcode/inc/wpi_script729e.js?ver=2ffca2a26539a754b56278303b67cc9f'></script>
+<script type='text/javascript' src='../wp-content/plugins/gf/js/customscript729e.js?ver=2ffca2a26539a754b56278303b67cc9f'></script>
+<script type='text/javascript' src='../wp-content/plugins/gf/js/datepicker729e.js?ver=2ffca2a26539a754b56278303b67cc9f'></script>
+<script type='text/javascript' src='../wp-content/plugins/gf/js/footable729e.js?ver=2ffca2a26539a754b56278303b67cc9f'></script>
+<script type='text/javascript' src='../wp-content/plugins/gf/js/footable.paginate729e.js?ver=2ffca2a26539a754b56278303b67cc9f'></script>
+<script type='text/javascript' src='../wp-content/plugins/gf/js/footable.filter729e.js?ver=2ffca2a26539a754b56278303b67cc9f'></script>
+<script type='text/javascript' src='../wp-content/plugins/gf/js/footable.sort729e.js?ver=2ffca2a26539a754b56278303b67cc9f'></script>
+<script type='text/javascript' src='../wp-content/plugins/media-folder/public/js/media-folder-public8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min6619.js?ver=5.2.5'></script>
+<script type='text/javascript' src='../wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min6619.js?ver=5.2.5'></script>
+<script type='text/javascript' src='../wp-content/plugins/wp-countup-js/js/countUp729e.js?ver=2ffca2a26539a754b56278303b67cc9f'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var wp_cup_settings = { "reset_counter_when_view_again": "", "end_inside_shortcode": "", "settings": { "useEasing": true, "useGrouping": true, "separator": ",", "decimal": ".", "prefix": "", "suffix": "" } };
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/wp-countup-js/js/show_counter729e.js?ver=2ffca2a26539a754b56278303b67cc9f'></script>
+<script type='text/javascript' src='../wp-content/themes/kleo/assets/js/init8603.js?ver=4.0.6'></script>
+<script type='text/javascript' src='../wp-content/themes/kleo/assets/js/modernizr.custom.465048603.js?ver=4.0.6'></script>
+<script type='text/javascript' src='../wp-content/plugins/wpi-designer-button-shortcode/inc/front_global7738.js?t=842&amp;ver=2.5.8'></script>
+<script type='text/javascript' src='../wp-content/plugins/wpi-designer-button-shortcode/inc/front_script7738.js?t=842&amp;ver=2.5.8'></script>
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embedde0b?url=https%3A%2F%2Fwww.nofoodwaste.in%2Fprivacy-policy%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed4328?url=https%3A%2F%2Fwww.nofoodwaste.in%2Fprivacy-policy%2F&amp;format=xml" />
+            <script type="text/javascript">
+                jQuery(document).ready(function () {
+                    jQuery('.example').footable().bind('footable_filtering', function (e) {
+                        var selected = jQuery('.filter-status').find(':selected').text();
+                        if (selected && selected.length > 0) {
+                            e.filter += (e.filter && e.filter.length > 0) ? ' ' + selected : selected;
+                            e.clear = !e.filter;
+                        }
+                    });
+                    jQuery('#change-page-size').change(function (e) {
+                        e.preventDefault();
+                        var pageSize = jQuery(this).val();
+                        jQuery('.footable').data('page-size', pageSize);
+                        jQuery('.footable').trigger('footable_initialized');
+                    });
+
+                });
+            </script>
+            
+<script type="text/javascript">
+                (function (url) {
+                    if (/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)) { return; }
+                    var addEvent = function (evt, handler) {
+                        if (window.addEventListener) {
+                            document.addEventListener(evt, handler, false);
+                        } else if (window.attachEvent) {
+                            document.attachEvent('on' + evt, handler);
+                        }
+                    };
+                    var removeEvent = function (evt, handler) {
+                        if (window.removeEventListener) {
+                            document.removeEventListener(evt, handler, false);
+                        } else if (window.detachEvent) {
+                            document.detachEvent('on' + evt, handler);
+                        }
+                    };
+                    var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+                    var logHuman = function () {
+                        var wfscr = document.createElement('script');
+                        wfscr.type = 'text/javascript';
+                        wfscr.async = true;
+                        wfscr.src = url + '&r=' + Math.random();
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(wfscr);
+                        for (var i = 0; i < evts.length; i++) {
+                            removeEvent(evts[i], logHuman);
+                        }
+                    };
+                    for (var i = 0; i < evts.length; i++) {
+                        addEvent(evts[i], logHuman);
+                    }
+                })('../indexe270.html?wordfence_logHuman=1&amp;hid=9B8424FE3D0D83CE1276D9B14FEFBE66');
+</script>
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<style>
+
+</style>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-71155744-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>		<style type="text/css">
+				</style>
+	<link rel='stylesheet' id='select2-css'  href='../wp-content/plugins/woocommerce/assets/css/select2729e.css?ver=2ffca2a26539a754b56278303b67cc9f' type='text/css' media='all' />
+</head>
+    
+<body class="page-template page-template-page-templates page-template-full-width page-template-page-templatesfull-width-php page page-id-11658 locale-en-us wpi_db kleo-navbar-fixed navbar-resize navbar-full-width wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+	
+	
+		<div class="kleo-page">
+
+<div id="header" class="header-color">
+
+	<div class="navbar" role="navigation">
+
+		
+				<div class="kleo-main-header header-centered">
+			<div class="container">
+					<div class="navbar-header">
+					<div class="kleo-mobile-switch">
+
+												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+
+					
+
+					<strong class="logo">
+						<a href="..\home.aspx">
+
+							
+								<img id="logo_img" title="ahar" src="img/ahar1.png"
+								     alt="ahar">
+
+							
+						</a>
+					</strong>
+				</div>
+
+				
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-collapse">
+                    <ul id="menu-menu-bar" class="nav navbar-nav">
+                     <li id="menu-item-11253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-936 current_page_item menu-item-11253 active"><a title="Home" href="..\home.aspx">Home</a></li>
+<li id="menu-item-11312" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11312 dropdown mega-6-cols"><a title="About" class="js-activated">About <span class="caret"></span></a>
+<ul role="menu" class="dropdown-menu sub-menu pull-left">
+	<li id="menu-item-11128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11128"><a title="How it Works" href="how_we_work.aspx">How it Works</a></li>
+	<li id="menu-item-11124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11124"><a title="Awards" href="awards.aspx">Awards</a></li>
+	<li id="menu-item-12512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12512"><a title="Ahar Team" href="nfw.aspx">Ahar Team</a></li>
+	<li id="menu-item-11349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11349"><a title="FAQ" href="faq.aspx">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-11616" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11616"><a title="Ahar ATM" href="aharatm.aspx">Ahar ATM</a></li>
+<li id="menu-item-12323" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12323 dropdown mega-2-cols"><a title="Donation" class="js-activated">Donation <span class="caret"></span></a>
+<ul role="menu" class="dropdown-menu sub-menu pull-left">
+	<li id="menu-item-11125" class="donate-nav menu-item menu-item-type-post_type menu-item-object-page menu-item-11125"><a title="Donate" href="donate.aspx">Donate</a></li>
+	<li id="menu-item-11423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11423"><a title="Share Your Birthday" href="sharebirthday.aspx">Share Your Birthday</a></li>
+</ul>
+</li>
+<li id="menu-item-11122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11122"><a title="Volunteer" href="volin.aspx">Volunteer</a></li>
+<li id="menu-item-11788" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11788"><a title="Ahar Spots" href="map.html">Ahar Spots</a></li>
+<li id="menu-item-11784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11784"><a title="Gallery" href="gallary.aspx">Gallery</a></li>
+                      <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11312 dropdown mega-6-cols"><a title="Signup" class="js-activated">Sign Up <span class="caret"></span></a>
+<ul role="menu" class="dropdown-menu sub-menu pull-left">
+	<li id="menu-item-11140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11128"><a title="User Sign Up" href="signup.aspx">User Sign Up</a></li>
+	<li id="menu-item-11141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11124"><a title="Volinteer Sing Up" href="volsignup.aspx">Volinteer Sing Up</a></li>
+	</ul>
+</li>
+                                      <li id="menu-item-1136" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11312 dropdown mega-6-cols"><a title="login" class="js-activated">Login <span class="caret"></span></a>
+<ul role="menu" class="dropdown-menu sub-menu pull-left">
+	<li id="menu-item-11132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11128"><a title="User login" href="login.aspx">User login</a></li>
+	<li id="menu-item-116765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11124"><a title="Volinteer login" href="vollogin.aspx">Volinteer login</a></li>
+	<li id="menu-item-116565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11124"><a title="Hotel login" href="hotellogin.aspx">Hotel login</a></li>
+
+	</ul>
+</li>
+<li id="menu-item-11311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11311"><a title="Contact" href="contact.aspx">Contact</a></li>
+<li id="menu-item-12670" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12670 dropdown mega-1-cols"><a title="Events" class="js-activated">Events <span class="caret"></span></a>
+<ul role="menu" class="dropdown-menu sub-menu pull-left">
+	<li id="menu-item-12673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12673"><a title="Charity Cricket" href="#">Charity Cricket</a></li>
+</ul>
+</li>
+</div>
+                </div>
+			</div>
+	</div>
+
+</div><!--end header-->
+
+        <asp:ContentPlaceHolder ID="head" runat="server">
+
+		<div id="main">
+
+	
+
+<section class='container-wrap main-title alternate-color  main-right-breadcrumb border-bottom'><div class='container'><h1 class="page-title">Privacy Policy</h1><div class='breadcrumb-extra'><p class="page-info"><em class="muted">Call us on</em> &nbsp;&nbsp;<i class="icon-phone"></i> +91 90877 90877 &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon-mail-alt"></i> nofoodwaste.in@gmail.com</p></div></div></section>
+
+<section class="container-wrap main-color">
+	<div id="main-container" class="container-full">
+		
+			<div class="template-page col-sm-12 tpl-no">
+				<div class="wrap-content">
+					
+				
+
+
+<!-- Begin Article -->
+<article id="post-11658" class="clearfix post-11658 page type-page status-publish">
+
+    
+    <div class="article-content">
+        <section class="container-wrap  main-color "  style="padding-top:40px;padding-bottom:40px" ><div class="section-container container"><div class="vc_row vc_row-fluid row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="kleo_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>We value the trust you place in us. That’s why we insist upon the highest standards for secure transactions and user information privacy. Please read the following statement to learn about our information gathering and dissemination practices.</p>
+<p>Note: Our privacy policy is subject to change at any time without notice. To make sure you are aware of any changes, please review this policy periodically.</p>
+<p>By visiting this Website, you agree to be bound by the terms and conditions of this Privacy Policy. If you do not agree please do not use or access our Website.</p>
+<p>By mere use of the Website, you expressly consent to our use and disclosure of your personal information in accordance with this Privacy Policy. This Privacy Policy is incorporated into and subject to the Terms of Use.</p>
+<p>&nbsp;</p>
+<p><strong>Collection of Personally Identifiable Information and other Information</strong></p>
+<p>When you use our Website, we collect and store your personal information which is provided by you from time to time. Our primary goal in doing so is to provide you a safe, efficient, smooth and customized experience. This allows us to provide services and features that most likely meet your needs, and to customize our Website to make your experience safer and easier. More importantly, while doing so we collect personal information from you that we consider necessary for achieving this purpose.</p>
+<p>In general, you can browse the Website without telling us who you are or revealing any personal information about yourself. Once you give us your personal information, you are not anonymous to us. Where possible, we indicate which fields are required and which fields are optional. You always have the option to not provide information by choosing not to use a particular service or feature on the Website. We may automatically track certain information about you based upon your behavior on our Website. We use this information to do internal research on our users’ demographics, interests, and behavior to better understand, protect and serve our users. This information is compiled and analyzed on an aggregated basis. This information may include the URL that you just came from (whether this URL is on our Website or not), which URL you next go to (whether this URL is on our Website or not), your computer browser information, and your IP address.</p>
+<p>We use data collection devices such as “cookies” on certain pages of the Website to help analyze our web page flow, measure promotional effectiveness, and promote trust and safety. “Cookies” are small files placed on your hard drive that assist us in providing our services. We offer certain features that are only available through the use of a “cookie”.</p>
+<p>We also use cookies to allow you to enter your password less frequently during a session. Cookies can also help us provide information that is targeted to your interests. Most cookies are “session cookies,” meaning that they are automatically deleted from your hard drive at the end of a session. You are always free to decline our cookies if your browser permits, although in that case you may not be able to use certain features on the Website and you may be required to re-enter your password more frequently during a session.</p>
+<p>Additionally, you may encounter “cookies” or other similar devices on certain pages of the Website that are placed by third parties. We do not control the use of cookies by third parties. If you choose to contribute on the Website, we collect information about your contributions history. If you transact with us, we collect some additional information, such as a billing address, a credit / debit card number and a credit / debit card expiration date and/ or other payment instrument details and tracking information from cheque or money orders.</p>
+<p>If you choose to post messages on our message boards, chat rooms or other message areas or leave feedback, we will collect that information you provide to us. We retain this information as necessary to resolve disputes, provide customer support and troubleshoot problems as permitted by law. If you send us personal correspondence, such as emails or letters, or if other users or third parties send us correspondence about your activities or postings on the Website, we may collect such information into a file specific to you.</p>
+<p>We collect personally identifiable information (email address, name, phone number, credit card / debit card / other payment instrument details, etc.) from you when you set up a free account with us. While you can browse some sections of our Website without being a registered member, certain activities (such as placing an order) do require registration. We do use your contact information to send you offers based on your previous orders and your interests.</p>
+<p>&nbsp;</p>
+<p><strong>Use of Demographic / Profile Data / Your Information</strong></p>
+<p>We use personal information to provide the services you request. To the extent, we use your personal information to market to you, we will provide you the ability to opt-out of such uses. We use your personal information to resolve disputes; troubleshoot problems; help promote a safe service; collect money; measure consumer interest in our products and services, inform you about online and offline offers, products, services, and updates; customize your experience; detect and protect us against error, fraud and other criminal activity; enforce our terms and conditions; and as otherwise described to you at the time of collection. In our efforts to continually improve our product and service offerings, we collect and analyze demographic and profile data about our users’ activity on our Website.</p>
+<p>We identify and use your IP address to help diagnose problems with our server, and to administer our Website. Your IP address is also used to help identify you and to gather broad demographic information. We will occasionally ask you to complete optional online surveys. These surveys may ask you for contact information and demographic information (like zip code, age, or income level). We use this data to tailor your experience at our Website, providing you with content that we think you might be interested in and to display content according to your preferences.</p>
+<p>&nbsp;</p>
+<p><strong>Cookies</strong></p>
+<p>A “cookie” is a small piece of information stored by a web server on a web browser so it can be later read back from that browser. Cookies are useful for enabling the browser to remember information specific to a given user. We place both permanent and temporary cookies in your computer’s hard drive. The cookies do not contain any of your personally identifiable information.</p>
+<p>&nbsp;</p>
+<p><strong>Sharing of personal information</strong></p>
+<p>We may share personal information with our other corporate entities and affiliates to help detect and prevent identity theft, fraud and other potentially illegal acts; correlate related or multiple accounts to prevent abuse of our services; and to facilitate joint or co-branded services that you request where such services are provided by more than one corporate entity. Those entities and affiliates may not market to you as a result of such sharing unless you explicitly opt-in.</p>
+<p>We may disclose personal information if required to do so by law or in the good faith belief that such disclosure is reasonably necessary to respond to subpoenas, court orders, or other legal process. We may disclose personal information to law enforcement offices, third party rights owners, or others in the good faith belief that such disclosure is reasonably necessary to: enforce our Terms or Privacy Policy; respond to claims that an advertisement, posting or other content violates the rights of a third party; or protect the rights, property or personal safety of our users or the general public.</p>
+<p>We and our affiliates will share / sell some or all of your personal information with another business entity should we (or our assets) plan to merge with, or be acquired by that business entity, or re-organization, amalgamation, restructuring of business. Should such a transaction occur that other business entity (or the new combined entity) will be required to follow this privacy policy with respect to your personal information</p>
+<p>&nbsp;</p>
+<p><strong>Links to Other Sites</strong></p>
+<p>Our Website links to other websites that may collect personally identifiable information about you. No Food Waste is not responsible for the privacy practices or the content of those linked websites.</p>
+<p>&nbsp;</p>
+<p><strong>Security Precautions</strong></p>
+<p>Our Website has stringent security measures in place to protect the loss, misuse, and alteration of the information under our control. Whenever you change or access your account information, we offer the use of a secure server. Once your information is in our possession we adhere to strict security guidelines, protecting it against unauthorized access.</p>
+<p>&nbsp;</p>
+<p><strong>Choice/Opt-Out</strong></p>
+<p>We provide all users with the opportunity to opt-out of receiving non-essential (promotional, marketing-related) communications from us on behalf of our partners, and from us in general, after setting up an account. If you want to remove your contact information from all No Food Waste lists and newsletters, please send us an email at&nbsp;<a href="mailto:nofoodwaste.in@gmail.com">nofoodwaste.in@gmail.com</a></p>
+<p>&nbsp;</p>
+<p><strong>Your Consent</strong></p>
+<p>By using the Website and/ or by providing your information, you consent to the collection and use of the information you disclose on the Website in accordance with this Privacy Policy, including but not limited to your consent for sharing your information as per this privacy policy. If we decide to change our privacy policy, we will post those changes on this page so that you are always aware of what information we collect, how we use it, and under what circumstances we disclose it.</p>
+<p>&nbsp;</p>
+<p><strong>Grievance Officer</strong></p>
+<p>In accordance with Information Technology Act 2000 and rules made there under, the name and contact details of the Grievance Officer are provided below:</p>
+<p>&nbsp;</p>
+<p>Mr. A.G.Padmanaban</p>
+<p>No Food Waste</p>
+<p>Email:&nbsp;nofoodwaste.in@gmail.com</p>
+<p>&nbsp;</p>
+
+		</div> 
+	</div> </div></div></div></div></div></section><!-- end section -->
+            </div><!--end article-content-->
+
+    </article>
+<!-- End  Article -->
+
+
+        
+        
+	        
+
+				
+				</div><!--end wrap-content-->
+			</div><!--end main-page-template-->
+								</div><!--end .container-->
+  
+</section>
+<!--END MAIN SECTION-->
+
+	    </asp:ContentPlaceHolder>
+    
+		</div><!-- #main -->
+
+<div id="footer" class="footer-color border-top">
+	<div class="container">
+		<div class="template-page tpl-no">
+			<div class="wrap-content">
+				<div class="row">
+					<div class="col-sm-3">
+						<div id="footer-sidebar-1" class="footer-sidebar widget-area" role="complementary">
+							<div id="text-3" class="widget widget_text">			<div class="textwidget"><h4 style="font-family: sans-serif;font-weight: 700;">About Us</h4>
+<p>Ahar is a mission to end food waste and hunger to make the “World Hunger Free”. We recover surplus food from weddings, parties and functions and donate it to needy and hungry people. </p>
+<p>Dedicated Food Recovery Units including Helpline Number, Food Recovery Vehicles, Vessels and Volunteers are involved for effective process execution.
+</p></div>
+		</div>						</div>
+					</div>
+					<div class="col-sm-3">
+						<div id="footer-sidebar-2" class="footer-sidebar widget-area" role="complementary">
+							<div id="text-2" class="widget widget_text">			<div class="textwidget">  <h4 style="font-family: sans-serif;font-weight: 700;">
+                                  Hours Of Operation</h4>                         
+                                <p>
+
+                                    <b>ALL DAYS:</b> 9:00am to 10:00pm </p>
+ 
+                                    <p>Please submit  request through call or registered as user for food donation         
+                                       
+                                </p>
+<p style="font-weight: 700;">Phone: 80923 08696</p>
+<p style="font-weight: 700;">Email: ahar.in@gmail.com</p></div>
+		</div>						</div>
+					</div>
+					
+					<div class="col-sm-3">
+						<div id="footer-sidebar-4" class="footer-sidebar widget-area" role="complementary">
+							<div id="social-icons-widget-2" class="widget social-icons-widget"><h4 class="widget-title">Follow Us</h4>
+<ul class="icons-medium">
+									<li class="facebook"><a href="#" target="_blank"><img class="site-icon" src="../wp-content/plugins/social-media-icons-widget/icons/medium/facebook.jpg" alt="Facebook" title="Facebook" height="32" width="32" /></a></li>		
+					<li class="googleplus"><a href="#" target="_blank"><img class="site-icon" src="../wp-content/plugins/social-media-icons-widget/icons/medium/googleplus.jpg" alt="Google+" title="Google+" height="32" width="32" /></a></li>		
+														<li class="twitter"><a href="#" target="_blank"><img class="site-icon" src="../wp-content/plugins/social-media-icons-widget/icons/medium/twitter.jpg" alt="Twitter" title="Twitter" height="32" width="32" /></a></li>		
+							<li class="youtube"><a href="#" target="_blank"><img class="site-icon" src="../wp-content/plugins/social-media-icons-widget/icons/medium/youtube.jpg" alt="YouTube" title="YouTube" height="32" width="32" /></a></li>		
+		
+</ul>
+</div><div id="text-5" class="widget widget_text">			<div class="textwidget"><br>
+<br>
+<br>
+	</div>						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- #footer -->
+	<a class="kleo-go-top" href="#"><i class="icon-up-open-big"></i></a>
+
+              <div class="bottom-arrow">
+
+                                                            </div>		<!-- SOCKET SECTION
+		================================================ -->
+
+		<div id="socket" class="socket-color">
+			<div class="container">
+				<div class="template-page tpl-no col-xs-12 col-sm-12">
+					<div class="wrap-content">
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="gap-10"></div>
+							</div><!--end widget-->
+
+							<div class="col-sm-12">
+								<p style="text-align: center; font-size: 13px;">
+                                    <a href="privacy.aspx">Privacy Policy |</a>
+                                    <a style="font-size: 16px;" href="tnc.aspx">Terms &amp; Conditions |</a>
+                                    <a href="disc.aspx">Disclaimer Policy |</a> 
+                                    <a style="font-size: 16px;" href="refund.aspx">Refund Policy | </a>
+                                    <a href="faq.aspx">FAQ</a></p>
+<p style="text-align: center;"><strong>©2019 ahar</strong></p>							</div>
+							
+							<div class="col-sm-12">
+								<div class="gap-10"></div>
+							</div><!--end widget-->
+						</div><!--end row-->
+
+					</div><!--end wrap-content-->
+				</div><!--end template-page-->
+			</div><!--end container-->
+		</div><!--end footer-->
+	</div><!-- #page -->
+
+    
+	
+<script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts5859.js?ver=4.9.1'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/core.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/datepicker.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+    jQuery(document).ready(function (jQuery) { jQuery.datepicker.setDefaults({ "closeText": "Close", "currentText": "Today", "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "nextText": "Next", "prevText": "Previous", "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"], "dateFormat": "MM d, yy", "firstDay": 1, "isRTL": false }); });
+</script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.form.min018d.js?ver=3.37.0'></script>
+<script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js?ver=2.70'></script>
+
+<script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min72e6.js?ver=2.6.4'></script>
+<script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min330a.js?ver=1.4.1'></script>
+
+<script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min72e6.js?ver=2.6.4'></script>
+<script type='text/javascript' src='../wp-content/themes/kleo/assets/js/bootstrap.min8603.js?ver=4.0.6'></script>
+<script type='text/javascript' src='../wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.mina752.js?ver=4.11.2.1'></script>
+<script type='text/javascript' src='../wp-content/themes/kleo/assets/js/plugins/magnific-popup/magnific.min8603.js?ver=4.0.6'></script>
+<script type='text/javascript' src='../wp-content/themes/kleo/assets/js/plugins/carouFredSel/jquery.carouFredSel-6.2.0-packed8603.js?ver=4.0.6'></script>
+<script type='text/javascript' src='../wp-content/themes/kleo/assets/js/plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min8603.js?ver=4.0.6'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var mejsL10n = { "language": "en-US", "strings": { "Close": "Close", "Fullscreen": "Fullscreen", "Turn off Fullscreen": "Turn off Fullscreen", "Go Fullscreen": "Go Fullscreen", "Download File": "Download File", "Download Video": "Download Video", "Play": "Play", "Pause": "Pause", "Captions\/Subtitles": "Captions\/Subtitles", "None": "None", "Time Slider": "Time Slider", "Skip back %1 seconds": "Skip back %1 seconds", "Video Player": "Video Player", "Audio Player": "Audio Player", "Volume Slider": "Volume Slider", "Mute Toggle": "Mute Toggle", "Unmute": "Unmute", "Mute": "Mute", "Use Up\/Down Arrow keys to increase or decrease volume.": "Use Up\/Down Arrow keys to increase or decrease volume.", "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds." } };
+    var _wpmejsSettings = { "pluginPath": "\/wp-includes\/js\/mediaelement\/" };
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-includes/js/mediaelement/mediaelement-and-player.min51cd.js?ver=2.22.0'></script>
+<script type='text/javascript' src='../wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.mina752.js?ver=4.11.2.1'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var kleoFramework = { "ajaxurl": "\/wp-admin\/", "themeUrl": "\/wp-content\/themes\/kleo", "loginUrl": "", "goTop": "1", "ajaxSearch": "0", "alreadyLiked": "You already like this", "logo": "\/wp-content\/uploads\/2016\/04\/NO-FOOD-WASTE.png", "retinaLogo": "", "headerHeight": "88", "loadingmessage": "<i class=\"icon icon-spin5 animate-spin\"><\/i> Sending info, please wait...", "DisableMagnificGallery": "0", "portfolioVideoHeight": "160" };
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/kleo/assets/js/app.min8603.js?ver=4.0.6'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min729e.js?ver=2ffca2a26539a754b56278303b67cc9f'></script>
+<script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/select2/select2.mine248.js?ver=3.5.4'></script>
+<script type='text/javascript' src='../wp-content/plugins/js_composer/assets/js/dist/js_composer_front.mina752.js?ver=4.11.2.1'></script>
+
+
+
+</body>
+
+</html>
