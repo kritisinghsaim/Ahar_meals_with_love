@@ -1,0 +1,2 @@
+# ahar
+It is a food recovery and food waste management network that helps connect the individuals and businesses with excess food to people in need. We approach the issue of hunger with a sharing-economy model: the donation of excess food enables a vital, yet often wasted, resource to be used to its full capacity. Ahar is an edible food Recovery Project which serves the surplus excess foods from Weddings , Parties , and other events, to the hungry and deprived. 
